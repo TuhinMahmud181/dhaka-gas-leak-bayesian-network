@@ -1,0 +1,17 @@
+item,question,answer,respondents
+Q29,"Of all pipeline segments in Dhaka today, how many have active external corrosion?",Unsure,4
+Q29,"Of all pipeline segments in Dhaka today, how many have active external corrosion?",10-25%,1
+Q29,"Of all pipeline segments in Dhaka today, how many have active external corrosion?",Under 10%,1
+Q29,"Of all pipeline segments in Dhaka today, how many have active external corrosion?",Over 75%,1
+Q30,How many have illegal tapping?,Unsure,4
+Q30,How many have illegal tapping?,10-25%,2
+Q30,How many have illegal tapping?,50-75%,1
+Q31,"If a utility could fix only ONE thing, which reduces risk most?",Stop illegal connections,3
+Q31,"If a utility could fix only ONE thing, which reduces risk most?",Regular maintenance,2
+Q31,"If a utility could fix only ONE thing, which reduces risk most?",Restore cathodic protection,1
+Q31,"If a utility could fix only ONE thing, which reduces risk most?",Replace old pipe,1
+Q32,Would fixing three things together work much better than the best single fix?,Much better,5
+Q32,Would fixing three things together work much better than the best single fix?,Somewhat better,2
+Q33,"Is flooding a direct cause of pipe damage, or does it only speed up corrosion?",Only speeds up corrosion,4
+Q33,"Is flooding a direct cause of pipe damage, or does it only speed up corrosion?",Unsure,2
+Q33,"Is flooding a direct cause of pipe damage, or does it only speed up corrosion?",Direct cause,1

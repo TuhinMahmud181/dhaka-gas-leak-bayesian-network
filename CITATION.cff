@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this model or code, please cite the paper."
+title: "Gas leak frequency in Dhaka: noisy-OR Bayesian network (model, code and data)"
+authors:
+  - family-names: Mahmud
+    given-names: Tuhin
+    affiliation: "Department of Chemical Engineering, Bangladesh University of Engineering and Technology"
+  - family-names: Razia
+    given-names: Syeda Sultana
+    affiliation: "Department of Chemical Engineering, Bangladesh University of Engineering and Technology"
+    email: syedasrazia@che.buet.ac.bd
+date-released: 2026-09-24
+preferred-citation:
+  type: article
+  title: "Estimating gas leak frequency in a data-sparse urban distribution network: a noisy-OR Bayesian network for Dhaka, Bangladesh"
+  authors:
+    - family-names: Mahmud
+      given-names: Tuhin
+    - family-names: Razia
+      given-names: Syeda Sultana
+  journal: "Process Safety and Environmental Protection"
+  status: submitted

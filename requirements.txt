@@ -1,0 +1,4 @@
+numpy>=1.24
+matplotlib>=3.7
+# Figure 2 (figure2_network.py) also needs the Graphviz 'dot' program,
+# installed as a system package (e.g. apt install graphviz, brew install graphviz).

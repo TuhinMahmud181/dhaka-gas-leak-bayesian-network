@@ -1,0 +1,19 @@
+item,question,model_parameter,very_low,low,moderate,high,very_high,unsure,n_usable,median,min,max
+Q5,External corrosion. Chance of a leak within one year?,External Corrosion -> Pipeline Leak,0,1,4,1,0,1,6,0.35,0.15,0.6
+Q6,Hit by excavator or vehicle. Chance of a leak within one year?,Outside Force Damage -> Pipeline Leak,1,1,2,2,1,0,7,0.35,0.05,0.85
+Q7,Illegal tapping. Chance of a leak within one year?,Unauthorized Modification -> Pipeline Leak,0,0,4,2,1,0,7,0.35,0.35,0.85
+Q8,Wall loss or material defect. Chance of a leak within one year?,Material Degradation -> Pipeline Leak,0,1,3,2,0,1,6,0.35,0.15,0.6
+Q9,Pressure or control fault. Chance of a leak within one year?,Operational Failure -> Pipeline Leak,0,4,2,0,0,1,6,0.15,0.15,0.35
+Q10,Riser failure. Chance of a leak on the main within one year?,Not used (riser failure -> loss of containment on the main),0,1,3,0,1,2,5,0.35,0.15,0.85
+Q11,No cathodic protection. Chance of external corrosion within one year?,Cathodic Protection (Absent) -> External Corrosion,0,2,2,1,2,0,7,0.35,0.15,0.85
+Q12,Corrosive soil. Chance of external corrosion within one year?,Soil Corrosivity (High) -> External Corrosion,0,0,2,3,2,0,7,0.6,0.35,0.85
+Q13,Pipe is 40+ years old. Chance of external corrosion within one year?,Pipeline Age (Old) -> External Corrosion,0,1,0,5,1,0,7,0.6,0.15,0.85
+Q14,Frequent water logging. Chance of external corrosion within one year?,Water Logging (Frequent) -> External Corrosion,0,1,3,3,0,0,7,0.35,0.15,0.6
+Q15,Heavy excavation nearby. Chance of outside force damage within one year?,Third Party Interference (High) -> Outside Force Damage,0,0,2,3,2,0,7,0.6,0.35,0.85
+Q16,Buried too shallow. Chance of outside force damage within one year?,Burial Depth (Shallow) -> Outside Force Damage,0,1,2,3,1,0,7,0.6,0.15,0.85
+Q17,Illegal connections common in the area. Chance of illegal tapping within one year?,Illegal Connection (High) -> Unauthorized Modification,0,0,0,6,1,0,7,0.6,0.6,0.85
+Q18,Buried too shallow. Chance of illegal tapping within one year?,Burial Depth (Shallow) -> Unauthorized Modification,0,0,3,1,3,0,7,0.6,0.35,0.85
+Q19,Pipe is 40+ years old. Chance of wall loss or defect within one year?,Pipeline Age (Old) -> Material Degradation,0,0,3,4,0,0,7,0.6,0.35,0.6
+Q20,Low-grade pipe material. Chance of wall loss or defect within one year?,Material Quality (Low) -> Material Degradation,0,0,1,3,2,1,6,0.6,0.35,0.85
+Q21,Poor riser installation. Chance of riser failure within one year?,Riser Installation Quality (Poor) -> Riser Leak,0,1,0,2,2,2,5,0.6,0.15,0.85
+Q22,Maintenance is rare. Chance of riser failure within one year?,Maintenance Frequency (Rare) -> Riser Leak,0,2,1,2,0,2,5,0.35,0.15,0.6
