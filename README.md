@@ -49,9 +49,11 @@ The figures in the paper were drawn in TikZ/pgfplots from the values these scrip
 
 ## Contact
 
-Corresponding author: Syeda Sultana Razia, syedasrazia@che.buet.ac.bd
-First author: Tuhin Mahmud
+- **Tuhin Mahmud**, MSc Student<br>
+  Department of Chemical Engineering, Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh<br>
+  Email: 1024022108@che.buet.ac.bd
 
-## Licence
+- **Dr. Syeda Sultana Razia**, Professor<br>
+  Department of Chemical Engineering, Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh<br>
+  Email: syedasrazia@che.buet.ac.bd
 
-MIT (see `LICENSE`).
