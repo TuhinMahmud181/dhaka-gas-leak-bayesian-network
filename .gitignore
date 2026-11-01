@@ -3,3 +3,4 @@ code/figures/
 code/tex/
 code/*.npz
 code/*.json
+*.xlsx

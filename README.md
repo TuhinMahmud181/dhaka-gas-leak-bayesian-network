@@ -2,19 +2,19 @@
 
 Model, code and data for:
 
-> Mahmud, T., Razia, S.S. Estimating gas leak frequency in a data-sparse urban distribution network: a noisy-OR Bayesian network for Dhaka, Bangladesh. *Process Safety and Environmental Protection* (submitted).
+> Mahmud, T., Syeda, S.R. Estimating loss-of-containment risk in data-sparse urban gas distribution networks using a noisy-OR Bayesian network. *Process Safety and Environmental Protection* (under revision).
 
 ## Contents
 
 - `code/Pipeline_Failure.xdsl`: the Bayesian network (GeNIe format). Node IDs keep their original names: `Pipeline_Failure` is **Pipeline Leak** and `Riser_Failure` is **Riser Leak** in the paper.
-- `code/*.py`: scripts that reproduce every model result in the paper.
+- `code/*.py`: scripts that reproduce every model result in the paper. `revision_analyses.py` holds the tests added in the first-round revision.
 - `data/`: aggregated answers of the seven experts (Tables S2–S4). Individual answers are not shared.
 
 ## What the model gives
 
 - **Pipeline Leak.** The probability that a reference length L = 1 km of distribution main develops at least one new leak within one year. Eq. (4) turns it into new leaks per km per year. The escalation items did not state a segment length, so L is a modelling choice and the frequency scales as 1/L.
 - **Riser Leak.** The share of service risers leaking at a given time, anchored to the 2017 Titas riser survey. Eq. (5) turns it into new leaks per year by dividing by the mean riser-leak duration τ. τ has not been measured: 1 year is the reference and 0.5–3 years are reported.
-- **Hazard anchors.** The five mains anchors (Table S7) are the authors' judgements. They are held fixed in the Monte Carlo; `anchor_scenarios.py` shows their effect.
+- **Hazard anchors.** The five mains anchors (Table S7) are the authors' judgements. They are held fixed in the base Monte Carlo; `anchor_scenarios.py` and `revision_analyses.py` show their effect, one at a time and drawn together.
 
 ## Run
 
@@ -32,7 +32,15 @@ Run everything from `code/`, starting with `build_model.py`. It regenerates ever
 | `riser_link_test.py` | Table S11 | about 7 min |
 | `diagnostic.py` | Table S8 | about 1 min |
 | `value_of_information.py` | Table S9 | about 2 min |
+| `revision_analyses.py det` | Hazard anchors one at a time (Table S15), age links and leak term (Table S16), riser links, Dhaka-only counts (Section 2.9) | under 1 min |
+| `revision_analyses.py t6` and `thresh` | Table 6; riser-link values at which the ranking of the two bundles reverses (Section 3.5) | under 1 min |
+| `revision_analyses.py prev` | Anchors at the experts' prevalence answers (Table S15, last row) | under 1 min |
+| `revision_analyses.py mc anchors 2000 20261021` | Hazard anchors drawn independently (Table S15) | about 10 min |
+| `revision_analyses.py mc joint 2000 20261020` | Anchors and link probabilities drawn together (Sections 3.1, 3.2 and 3.6) | about 10 min |
+| `revision_analyses.py experts` | Leave-one-expert-out, pooling rules and agreement (Tables S13 and S14) | about 1 min |
 | `figure1_framework.py` … `figure6_interventions.py`, `figureS1_condition.py` | Figures 1–6 and S1 as PDF files in `code/figures/` | up to 15 min |
+
+`revision_analyses.py experts` needs the individual questionnaire answers, which are not shared; its results are given in Tables S13 and S14. It reads the file named in the `QUESTIONNAIRE_XLSX` environment variable and also needs `openpyxl` and `krippendorff`. The other commands use only the files in this repository.
 
 The figures in the paper were drawn in TikZ/pgfplots from the values these scripts print. The figure scripts produce equivalent matplotlib versions.
 
